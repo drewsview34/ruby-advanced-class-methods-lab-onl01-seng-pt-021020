@@ -24,13 +24,22 @@ class Song
     song
   end
   
-  def self.find_or_create_by_name(song_string)
+  def self.find_by_name(song_string)
     self.all.find {|string| string.name == name}
-
-      self.create_by_name
-      song
-    end
+  end 
+  
+  def self.find_or_create_by_name(song_string)
+    self.find_by_name(song_string) || self.create_by_name(song_string)
   end
+  
+  def self.alphabetical
+    self.all.sort_by {|song| song.name}  
+  end
+  
+  def self.new_from_filename(mp3_file)
+    mp3_file.split(" - ")
+    
+  end 
   
   def save
     self.class.all << self
