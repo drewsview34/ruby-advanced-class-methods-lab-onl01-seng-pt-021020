@@ -52,13 +52,18 @@ class Song
     artist = parts[0]
     song = parts[1].gsub(".mp3","")
     
-    song = self.new 
+    song = self.create
     song.artist_name = artist
     song.name = song
-    song.save
-  end 
+    song
+  end
+  
   def save
     self.class.all << self
+  end
+  
+  def self.destroy_all
+    
   end
 
 end
