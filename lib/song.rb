@@ -18,6 +18,9 @@ class Song
     song
   end
   
+  def self.create_by_name(song_string)
+    
+  
   def save
     self.class.all << self
   end
