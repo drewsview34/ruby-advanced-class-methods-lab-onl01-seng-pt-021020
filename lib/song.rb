@@ -13,8 +13,8 @@ class Song
   end
   
   def self.new_by_name(song_string)
-    @song_string = song_string
-    @song_string
+    song_string = song_string
+    song_string
   end
   
   def save
