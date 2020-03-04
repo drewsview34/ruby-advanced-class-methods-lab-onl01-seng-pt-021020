@@ -8,7 +8,7 @@ class Song
   
   def self.create
     self = self.new
-    puts self
+    self
   end
   
   def save
