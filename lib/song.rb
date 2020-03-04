@@ -38,6 +38,8 @@ class Song
   
   def self.new_from_filename(mp3_file)
     song = mp3_file.split(" - ")
+    artist = parts[0]
+    song = parts[1].gsub(".mp3","")
     
     
   end 
