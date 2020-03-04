@@ -45,7 +45,6 @@ class Song
     song.artist_name = artist
     song.name = song
     song
-    
   end 
   
   def save
