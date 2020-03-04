@@ -6,7 +6,9 @@ class Song
     @@all
   end
   
-  
+  def self.create
+    @@all << name
+    puts "#{self.name}"
 
   def save
     self.class.all << self
