@@ -7,7 +7,7 @@ class Song
   end
   
   def self.create
-    @@all << self
+    self = 
     puts self
   end
   
