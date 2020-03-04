@@ -25,7 +25,7 @@ class Song
   end
   
   def self.find_or_create_by_name(song_string)
-    if 
+    if self.all.find {|string| string.name == name}
     song
   end
   
