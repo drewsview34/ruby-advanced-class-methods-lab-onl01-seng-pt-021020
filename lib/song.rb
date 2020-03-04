@@ -7,7 +7,7 @@ class Song
   end
   
   def self.create
-    
+    song = Song.create
   end
   
   def save
